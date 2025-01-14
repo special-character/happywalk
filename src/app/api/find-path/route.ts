@@ -33,9 +33,9 @@ export async function POST(request: NextRequest) {
 
     // const data = (await response.json()) as FindPathResponse;
     const data = {
-      id: "chatcmpl-ApTcZtp2vSsT4SnNMRVBB5v0C7H1D",
+      id: "chatcmpl-ApgXcJJPmrk8fK9DTNYRFZ80VqIyW",
       object: "chat.completion",
-      created: 1736831955,
+      created: 1736881620,
       model: "gpt-4o-mini-2024-07-18",
       choices: [
         {
@@ -43,7 +43,7 @@ export async function POST(request: NextRequest) {
           message: {
             role: "assistant",
             content:
-              'Here is a GeoJSON representation of a suggested walking route near 1316 30th Ave S, Seattle, focusing on parks:\n\n```json\n{\n  "type": "FeatureCollection",\n  "features": [\n    {\n      "type": "Feature",\n      "geometry": {\n        "type": "LineString",\n        "coordinates": [\n          [-122.292551, 47.586043], // Start Point: 1316 30th Ave S\n          [-122.292386, 47.585616], // Park Entrance\n          [-122.293196, 47.586455], // Washington Park Arboretum\n          [-122.292099, 47.586055], // Arboretum area\n          [-122.288095, 47.586019], // Lake Washington Blvd\n          [-122.287823, 47.585625], // Continue towards the park\n          [-122.286245, 47.586110], // Continue along park path\n          [-122.285321, 47.586455], // Viewpoint\n          [-122.284511, 47.585900], // Return via trail towards Arboretum\n          [-122.292551, 47.586043]  // End Point: back at 1316 30th Ave S\n        ]\n      },\n      "properties": {\n        "name": "Park Loop Walk",\n        "description": "A scenic 2-3 mile loop through Washington Park Arboretum and surrounding areas."\n      }\n    }\n  ]\n}\n```\n\nThis route provides a pleasant walk through natural areas and parks in Seattle and totals approximately 2-3 miles. Adjust the coordinates further for specific points of interest along your route.',
+              '```json\n{\n  "type": "FeatureCollection",\n  "features": [\n    {\n      "type": "Feature",\n      "geometry": {\n        "type": "LineString",\n        "coordinates": [\n          [-122.293223, 47.591574],\n          [-122.293218, 47.592100],\n          [-122.293191, 47.592700],\n          [-122.293068, 47.593300],\n          [-122.292792, 47.593800],\n          [-122.292450, 47.594200],\n          [-122.292000, 47.594500],\n          [-122.291500, 47.594700],\n          [-122.291000, 47.594850],\n          [-122.290500, 47.594800],\n          [-122.290000, 47.594600],\n          [-122.289800, 47.594200],\n          [-122.289700, 47.593600],\n          [-122.289800, 47.593000],\n          [-122.290000, 47.592400],\n          [-122.290300, 47.591800],\n          [-122.290700, 47.591200],\n          [-122.291000, 47.590800],\n          [-122.291400, 47.590500],\n          [-122.291800, 47.590300],\n          [-122.292200, 47.590200],\n          [-122.292700, 47.590100],\n          [-122.293000, 47.590200],\n          [-122.293223, 47.591574]\n        ]\n      },\n      "properties": {\n        "length": "1 mile"\n      }\n    }\n  ]\n}\n```',
             refusal: null,
           },
           logprobs: null,
@@ -51,9 +51,9 @@ export async function POST(request: NextRequest) {
         },
       ],
       usage: {
-        prompt_tokens: 48,
-        completion_tokens: 363,
-        total_tokens: 411,
+        prompt_tokens: 59,
+        completion_tokens: 382,
+        total_tokens: 441,
         prompt_tokens_details: {
           cached_tokens: 0,
           audio_tokens: 0,
